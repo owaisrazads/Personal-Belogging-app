@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-white" id="dash-body">
+    
+    <!-- nav area start -->
+
+    <nav class=" bg-[#7749f8] p-2 flex justify-between items-center">
+        <h1 class="font-bold text-2xl text-[white] ml-[12%] max-[600px]:text-lg cursor-pointer" id="personalBlog">Personal Blogging App</h1>
+        <div class="flex  mr-[12%] items-center">
+        <p class="text-[white] mr-5 font-semibold"><a href="login.html" id="loginBtn"> Login</a></p>
+         <div id="profileDiv" class="flex items-center"><p class="text-[white]  mr-5 " ><button id="username"></button><br>
+            <div class="dropdown dropdown-end">
+           <div tabindex="0"  class=" m-1  "><img class="rounded-full cursor-pointer profile-image" id="profileImage" src="" alt="img" ></div>
+              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a id="profile">Profile</a></li>
+                <li><a id="dashboard">Dashboard</a></li>
+                <li><a id="logout">Logout</a></li>
+              </ul>
+            </div></p>
+        </div>
+        </div>
+    </nav>
+
+    <!-- nav area end -->
+
+    <!-- head area start -->
+
+
+    <div class="p-7 max-[600px]:p-4 bg-[white]">
+        <h2 class="text-4xl font-bold text-[#7749f8] ml-[10%] max-[600px]:text-3xl cursor-pointer" id="backToAll">< Back to all blogs</h2>
+    </div>
+    <hr class=" border-[#adb5bd] border-dashed">
+
+    <!-- head area end -->
+
+
+
+
+    <!-- blog area start -->
+    <div class="p-7 max-[600px]:p-4 bg-[#f8f9fa]">
+        <h2 class="text-3xl font-bold text-[#343a40] mt-8 ml-[10%] max-[600px]:text-3xl" id="allFrom"></h2>
+    </div>
+
+    <div class="flex justify-between">
+        <div id="allBlogsDiv">
+            <!-- <div class="flex justify-center ">
+                <div class=" bg-white w-[70%] mr-[10%] form-border pb-4 pt-5 pl-5 pr-5 mb-5  max-[1400px]:w-[40%] max-[800px]:w-[50%] max-[600px]:w-[70%] max-[1000px]:w-[50%]">
+        
+                    <div class="flex items-center mb-5">
+                        <img src="./src/img/Elon.jpg" height="80px" width="80px" class="rounded-xl mr-5 cursor-pointer" alt="">
+                        <div class="">
+                            <p class="text-black text-2xl font-semibold mb-2">Introducing Whisper</p>
+                            <p class="font-bold text-[#343a40a9]">Elon Musk - August 17th, 2023</p>
+                        </div>
+                    </div>
+        
+                    <div class="mb-5">
+                        <p class="text-lg text-[#343a40a9] font-[500] main-pera">Whisper is an automatic speech recognition (ASR) system trained on 680,000 hours of multilingual and multitask supervised data collected from the web. We show that the use of such a large and diverse dataset leads to improved robustness to accents, background noise and technical language. Moreover, it enables transcription in multiple languages, as well as translation from those languages into English. We are open-sourcing models and inference code to serve as a foundation for building useful applications and for further research on robust speech processing.</p>
+                    </div>
+        
+                    <div class="text-[#7749f8] text-lg font-[500]">
+                        <button>see all from this user</button>
+                    </div>
+        
+                </div>
+            </div>  -->
+        
+        </div>
+
+        <div>
+            <p class="text-end mr-[15%] text-xl text-black font-bold underline" id="seeEmail"></p>
+            <p class="text-end mr-[15%] mb-5 text-[#7749f8] text-4xl font-bold" id="seeName"></p>
+            <img id="seeImg" class="seeAllImg " src="" alt="img">
+        </div>
+
+
+    </div>
+
+
+    
+
+    <!-- blog area end -->
+
+   
+    
+    <script type="module" src="./script/seeUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-[#f8f9fa]" id="body">
+    
+    <!-- nav area start -->
+
+    <nav class=" bg-[#7749f8] p-2 flex justify-between items-center">
+        <h1 class="font-bold text-2xl text-[white] ml-[12%] max-[600px]:text-lg cursor-pointer" id="personalBlog">Personal Blogging App</h1>
+        <p class="flex items-center mr-[12%] text-[white]">  
+
+                <div id="profileDiv" class="flex items-center"><p class="text-[white]  mr-5 " >
+                    <div class="dropdown dropdown-end">
+                   <div tabindex="0"  class=" m-1  "><span class="text-white cursor-pointer" id="username"></span></div>
+                      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a id="dashboard">Dashboard</a></li>
+                        <li><a id="allBlogs">All Blogs</a></li>
+                      </ul>
+                    </div></p>
+                    <button class="text-[white] font-semibold ml-3" id="logout">Logout</button>
+                </div>
+        
+    </p>
+    </nav>
+
+    <!-- nav area end -->
+
+    <!-- head area start -->
+
+
+    <div class="p-7 max-[600px]:p-4 bg-[white]">
+        <h2 class="text-4xl font-bold text-[#343a40] ml-[10%] max-[600px]:text-3xl">Profile</h2>
+    </div>
+    <hr class=" border-[#adb5bd] border-dashed">
+
+    <!-- head area end -->
+
+    <!-- form area start -->
+    <div class="flex justify-center ">
+    <div class=" bg-white w-[70%] mr-[10%] form-border p-[2%] mt-5 rounded-md max-[1400px]:w-[40%] max-[800px]:w-[50%] max-[600px]:w-[70%] max-[1000px]:w-[50%]">
+        <img id="profileImage" src="" class="rounded-[30px] profile-img" alt="img">
+        <p class="text-black text-3xl font-semibold mt-9 flex"><span id="username1"> </span> <img id="pen" src="./src/img/pen-fill.svg"  class="ml-5 cursor-pointer" height="18px" width="18px" alt="img"></p>
+        <p class="text-black text-3xl font-semibold mt-4 flex">Password</p>
+        <form id="updateForm">
+            <input required id="oldPassword" type="text" placeholder="Old password" class="input input-bordered w-full max-w-xs mt-4" /><br>
+            <input required id="newPassword" type="text" placeholder="New password" class="input input-bordered w-full max-w-xs mt-4" /><br>
+            <input required id="repeatPassword" type="text" placeholder="Repeat password" class="input input-bordered w-full max-w-xs mt-4" /><br>
+            <button class="text-white bg-[#7749f8] p-2 mt-4 rounded-lg font-semibold">Update Password</button>
+        </form>
+    </div>
+    </div>
+
+                    
+
+    <!-- form area end -->
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Change Username Here!</h3>
+    <form id="userForm">
+        <input id="firstInput" class="input" type="text" placeholder="Enter First Name">
+        <input id="lastInput" class="input" type="text" placeholder="Enter Last Name">
+        <button class="btn btn-primary" type="submit">Change</button>
+    </form>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+   
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="script/profile.js"></script>
+</body>
+</html>

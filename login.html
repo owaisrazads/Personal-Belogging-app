@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-white" id="body">
+    
+    <!-- nav area start -->
+
+    <nav class=" bg-[#7749f8] p-2 flex justify-between items-center">
+        <h1 class="font-bold text-2xl text-[white] ml-[12%] max-[600px]:text-lg ">Personal Blogging App</h1>
+        <p class="text-[white] font-semibold mr-[12%]"><a href="signup.html">Signup</a></p>
+    </nav>
+
+    <!-- nav area end -->
+
+    <!-- head area start -->
+
+
+    <div class="p-7 max-[600px]:p-4 bg-[white]">
+        <h2 class="text-4xl font-bold text-[#343a40] ml-[10%] max-[600px]:text-3xl">Login</h2>
+    </div>
+    <hr class=" border-[#adb5bd] border-dashed">
+
+    <!-- head area end -->
+
+    <!-- form area start -->
+    <div class="flex justify-center ">
+    <div class="flex justify-center w-[30%] form-div p-[6%] mt-[2%] rounded-md max-[1400px]:w-[40%] max-[800px]:w-[50%] max-[600px]:w-[70%] max-[1000px]:w-[50%]">
+        <form class="flex flex-wrap justify-center" id="form">
+            <input required type="email" id="email" placeholder="Email" class="border-[#adb5bd] input input-bordered input-accent w-full max-w-xs" /><br><br><br>
+            <input required type="password" id="password" placeholder="Password" class="border-[#adb5bd] input input-bordered input-accent w-full max-w-xs" /><br><br><br>
+            <button class="btn btn-primary text-white">Login</button>
+        </form>
+    </div>
+    </div> 
+
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4" id="modal-message">Password are not same</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+        
+
+
+
+
+    <!-- form area end -->
+
+   
+    <script type="module" src="./script/login.js"></script>
+</body>
+</html>

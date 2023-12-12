@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-white" id="dash-body">
+    
+    <!-- nav area start -->
+
+    <nav class=" bg-[#7749f8] p-2 flex justify-between items-center">
+        <h1 class="font-bold text-2xl text-[white] ml-[12%] max-[600px]:text-lg cursor-pointer" id="personalBlog">Personal Blogging App</h1>
+        <div class="flex  mr-[12%] items-center">
+        <p class="text-[white] mr-5"><button id="username"></button><br>
+            <div class="dropdown dropdown-end">
+           <div tabindex="0"  class=" m-1 "><img class="rounded-full cursor-pointer profile-image" id="profileImage" src="" alt="img"></div>
+              <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a id="profile">Profile</a></li>
+                <li><a id="allBlogs">All Blogs</a></li>
+                <li><a id="logout">Logout</a></li>
+              </ul>
+            </div></p>
+        </div>
+    </nav>
+
+    <!-- nav area end -->
+
+    <!-- head area start -->
+
+
+    <div class="p-7 max-[600px]:p-4 bg-[white]">
+        <h2 class="text-4xl font-bold text-[#343a40] ml-[10%] max-[600px]:text-3xl">Dashboard</h2>
+    </div>
+    <hr class=" border-[#adb5bd] border-dashed">
+
+    <!-- head area end -->
+
+    <!-- form area start -->
+    <div class="flex justify-center ">
+    <div class="flex justify-center bg-white w-[70%] mr-[10%] form-div p-[3%]  mt-[2%] rounded-md max-[1400px]:w-[40%] max-[800px]:w-[50%] max-[600px]:w-[70%] max-[1000px]:w-[50%]">
+        <form class=" w-[100%]" id="todoForm">
+            <input required id="title" type="text" maxlength="50" minlength="5" placeholder="Enter Title" class="border-[#adb5bd] input input-bordered input-accent  w-[100%] max-w-[100%]" /><br><br>
+            <textarea required minlength="100" maxlength="3000" id="description" placeholder="What is in your mind" class="textarea textarea-bordered textarea-lg w-[100%] max-w-[100%]" ></textarea><br><br>
+            <button type="submit" class="btn btn-primary text-white">Publish Blog</button>
+        </form>
+    </div>
+    </div>
+
+
+    <!-- form area end -->
+
+
+
+    <!-- blog area start -->
+    <div class="p-7 max-[600px]:p-4 bg-[#f8f9fa]">
+        <h2 class="text-3xl font-bold text-[#343a40] mt-8 ml-[10%] max-[600px]:text-3xl">My Blogs</h2>
+    </div>
+
+<div id="blogcontainer">
+
+</div>
+
+    <!-- blog area end -->
+
+   
+    <script type="module" src="./script/dashboard.js"></script>
+</body>
+</html>
