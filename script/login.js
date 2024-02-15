@@ -24,7 +24,7 @@ form.addEventListener('submit', (event) => {
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            modalMessage.innerHTML = 'invalid-login-credentials'
+            modalMessage.innerHTML = 'Yout don't have an account'
             my_modal_1.showModal()
         });
 })
